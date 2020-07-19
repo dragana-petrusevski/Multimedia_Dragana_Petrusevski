@@ -3,26 +3,39 @@ package media;
 
 
 public class Radio {
-    private float fmFrequency;
-    private float amFrequency;
+    private double fmFrequency;
+    private int amFrequency;
     private char band; 
 
-    public float getFmFrequency() {
+    public double getFmFrequency() {
         return fmFrequency;
     }
 
-    public void setFmFrequency(float fmFrequency) {
+    public void setFmFrequency(double fmFrequency) {
         this.fmFrequency = fmFrequency;
     }
 
-    public float getAmFrequency() {
+    public int getAmFrequency() {
         return amFrequency;
     }
 
-    public void setAmFrequency(float amFrequency) {
+    public void setAmFrequency(int amFrequency) {
         this.amFrequency = amFrequency;
     }
+
+    public char getBand() {
+        return band;
+    }
+
+    public void setBand(char band) {
+        this.band = band;
+    }
     
+    public void printAttributes() {
+        System.out.println("FM Frequency is: " + this.getFmFrequency());
+        System.out.println("AM Frequency is: " + this.getAmFrequency());
+        System.out.println("Band is: " + this.getBand());
+    }
     
     
 }
